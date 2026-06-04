@@ -14,7 +14,7 @@ async def on_ready():
 
 @bot.command()
 async def スタンプ数を教えて(ctx):
-    await ctx.send("サーバー全体のスタンプを集計中だよ！ちょっと待ね...")
+    await ctx.send("サーバー全体のスタンプを集計中だよ！ちょっと待ってね...")
     target_user = ctx.author
     total_reactions = 0
 
