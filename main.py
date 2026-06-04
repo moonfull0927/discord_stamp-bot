@@ -23,7 +23,7 @@ async def スタンプ数を教えて(ctx):
         if not permissions.read_message_history:
             continue
         try:
-            async for message in channel.history(limit=200):
+            async for message in channel.history(limit=None):
                 if message.author == target_user:
                     for reaction in message.reactions:
                         total_reactions += reaction.count
